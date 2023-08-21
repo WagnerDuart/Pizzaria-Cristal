@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../js/index.js" rel="stylesheet">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy8M4sazACVatvKG2OTO3_YZnYFwemS2o&region=BR&language=pt-br&callback=initMap"></script>
+
+
+  <title>Pizzaria Cristal</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="navbar">
+    <a href="#" class="logo"><img src="../assets/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class=" navbar-nav">
+        <a class=" nav-link mr-5  text-white" href="../index.html">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mr-5  text-white" href="../html/cardapio.html">Cardapio</a>
+        <a class="nav-item nav-link mr-5  text-white" href="../html/cardapio.html#contato">Contato</a>
+        <a class="nav-item nav-link mr-5  text-white" href="../html/pedidos.html">Pedidos Online</a>
+    </div>
+    </div>
+  </nav>
+
+  <div class=" image_cardapio position-relative overflow-hidden p-3 p-md-5 m-auto text-center" id="">
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+  
+  <div class="cardapio position-relative overflow-hidden p-5 p-md-5 m-auto">
+    <div class="listas">
+
+      <div class="lista p-4">
+        <div class="l_pizzas" >
+          <h4 ><a href="../html/cardapio.html#pizza">PIZZAS</a></h4>
+        </div>
+        <div class="l_pizzas_doce" href="../html/cardapio.html#">
+          <h4>PIZZAS DOCES</h4>
+        </div>
+        <div class="l_fogazzas" href="../html/cardapio.html#">
+          <h4>FOGAZZAS</h4>
+        </div>
+        <!-- <div class="l_beirutes" href="/Pizzaria/html/cardapio.html#">
+          <h4>BEIRUTES</h4>
+        </div> -->
+        <div class="l_tortas" href="../html/cardapio.html#">
+          <h4>TORTAS</h4>
+        </div>
+      </div>
+      
+      <h2 class="text-center">CARDÁPIO</h2>
+      <div class="pizza m-md-5" id="pizza">
+        <h3 class="text-center" >PIZZAS</h3>
+        <div class="lista row mt-5">
+          <div class="calabresa col-6">
+            <h5 class="">CALABRESA</h5>
+            <dl>
+              <dd> molho, calabresa fatiada e cebola</dd>
+            </dl>
+          </div>
+          <div class="marguerita col-6">
+            <h5 class="">MARGUERITA</h5>
+            <dl>
+              <dd>Molho, mussarela, tomate e manjericão</dd>
+            </dl>
+          </div>
+          <div class="mussarela col-6">
+            <h5 class="">MUSSARELA</h5>
+            <dl>
+              <dd> molho e queijo mussarela</dd>
+            </dl>
+          </div>
+          <div class="baina col-6">
+            <h5 class="">BAIANA</h5>
+            <dl>
+              <dd> molho, calabresa moida, ovos, cebola e pimenta</dd>
+            </dl>
+          </div>
+          <div class="milho col-6">
+            <h5 class="">MILHO</h5>
+            <dl>
+              <dd> molho, mussarela e milho</dd>
+            </dl>
+          </div>
+          <div class="catupiry col-6">
+            <h5 class="">CATUPIRY</h5>
+            <dl>
+              <dd> molho, e generosa porção de catupiry</dd>
+            </dl>
+          </div>
+          <div class="napolitana col-6">
+            <h5 class="">NAPOLITANA</h5>
+            <dl>
+              <dd> molho, mussarela, tomate e parmesão</dd>
+            </dl>
+          </div>
+          <div class="bauru col-6">
+            <h5 class="">BAURU</h5>
+            <dl>
+              <dd> molho, presunto, mussarela e tomate</dd>
+            </dl>
+          </div>
+          <div class="atum col-6">
+            <h5 class="">ATUM</h5>
+            <dl>
+              <dd> molho, atum e calabresa</dd>
+            </dl>
+          </div>
+          <div class="cortesia col-6">
+            <h5 class="">CORTESIA</h5>
+            <dl>
+              <dd> molho, presunto, cebola e catupiry</dd>
+            </dl>
+          </div>
+          <div class="americana col-6">
+            <h5 class="">AMERICANA</h5>
+            <dl>
+              <dd> molho, atum, palmito, ervilha e mussarela</dd>
+            </dl>
+          </div>
+          <div class="moda col-6">
+            <h5 class="">Á MODA</h5>
+            <dl>
+              <dd> molho, presunto, ovos, mussarela e bacon</dd>
+            </dl>
+          </div>
+          <div class="palmito col-6">
+            <h5 class="">PALMITO</h5>
+            <dl>
+              <dd> molho, palmito e mussarela</dd>
+            </dl>
+          </div>
+          <div class="caipira col-6">
+            <h5 class="">CAIPIRA</h5>
+            <dl>
+              <dd> molho, frango, catupiry e milho</dd>
+            </dl>
+          </div>
+          <div class="canadense col-6">
+            <h5 class="">CANADENSE</h5>
+            <dl>
+              <dd> molho, lombo e catupiry</dd>
+            </dl>
+          </div>
+          <div class="catania col-6">
+            <h5 class="">CATANIA</h5>
+            <dl>
+              <dd> molho, frango, champignon e catupiry</dd>
+            </dl>
+          </div>
+          <div class="cristal col-6">
+            <h5 class="">CRISTAL</h5>
+            <dl>
+              <dd> molho, palmito e catupiry</dd>
+            </dl>
+          </div>
+          <div class="ditorino col-6">
+            <h5 class="">DITORINO</h5>
+            <dl>
+              <dd> molho, atum, cebola, ovos, mussarela e tomate</dd>
+            </dl>
+          </div>
+          <div class="ferrari col-6">
+            <h5 class="">FERRARI</h5>
+            <dl>
+              <dd> molho, presunto, palmito, ervilha e mussarela</dd>
+            </dl>
+          </div>
+          <div class="frango_com_bacon col-6">
+            <h5 class="">FRANGO COM BACON</h5>
+            <dl>
+              <dd> molho, presunto, mussarela e bacon</dd>
+            </dl>
+          </div>
+          <div class="frango_com_catupiry col-6">
+            <h5 class="">FRANGO COM CATUPIRY</h5>
+            <dl>
+              <dd> molho, frango e catupiry</dd>
+            </dl>
+          </div>
+          <div class="vegetariana col-6">
+            <h5 class="">VEGETARIANA</h5>
+            <dl>
+              <dd> molho, palmito, ervilha, milho e mussarela</dd>
+            </dl>
+          </div>
+          <div class="lombo col-6">
+            <h5 class="">LOMBO</h5>
+            <dl>
+              <dd> molho, lombo, cebola, ovos e mussarela</dd>
+            </dl>
+          </div>
+          <div class="paulista col-6">
+            <h5 class="">PAULISTA</h5>
+            <dl>
+              <dd> molho, calabresa moida, mussarela, pimenta e parmesão</dd>
+            </dl>
+          </div>
+          <div class="pepperoni col-6">
+            <h5 class="">PEPPERONI</h5>
+            <dl>
+              <dd> molho, mussarela e pepperoni</dd>
+            </dl>
+          </div>
+          <div class="peruana col-6">
+            <h5 class="">PERUANA</h5>
+            <dl>
+              <dd> molho, atum, cebola e mussarela</dd>
+            </dl>
+          </div>
+          <div class="pinedo col-6">
+            <h5 class="">PINEDO</h5>
+            <dl>
+              <dd> molho, presunto, champignon, mussarela e bacon</dd>
+            </dl>
+          </div>
+          <div class="pizzaiolo col-6">
+            <h5 class="">PIZZAIOLO</h5>
+            <dl>
+              <dd> molho, presunto, champignon, ovos e catupiry</dd>
+            </dl>
+          </div>
+          <div class="portuguesa col-6">
+            <h5 class="">PORTUGUESA</h5>
+            <dl>
+              <dd> molho, presunto, cebola, ervilha, ovos e mussarela</dd>
+            </dl>
+          </div>
+          <div class="dois_queijos col-6">
+            <h5 class="">DOIS QUEIJOS</h5>
+            <dl>
+              <dd> molho, mussarela e catupiry</dd>
+            </dl>
+          </div>
+          <div class="tres_queijos col-6">
+            <h5 class="">TRÊS QUEIJOS</h5>
+            <dl>
+              <dd> molho, mussarela, catupiry e provolone</dd>
+            </dl>
+          </div>
+          <div class="quatro_queijos col-6">
+            <h5 class="">QUATRO QUEIJOS</h5>
+            <dl>
+              <dd> molho, mussarela, catupiry, provolone e parmesão</dd>
+            </dl>
+          </div>
+          <div class="siciliana col-6">
+            <h5 class="">SICILIANA</h5>
+            <dl>
+              <dd> molho, champignon, mussarela e bacon</dd>
+            </dl>
+          </div>
+          <div class="alto_belo_1 col-6">
+            <h5 class="">ALTO BELO 1</h5>
+            <dl>
+              <dd> molho, calabresa moida, pimenta, palmito, catupiry, mussarela e manjericão</dd>
+            </dl>
+          </div>
+          <div class="alto_belo_2 col-6">
+            <h5 class="">ALTO BELO 2</h5>
+            <dl>
+              <dd> molho, frango, cheddar e milho</dd>
+            </dl>
+          </div>
+          <div class="alto_belo_3 col-6">
+            <h5 class="">ALTO BELO 3</h5>
+            <dl>
+              <dd> molho, presunto, ervilha, palmito e cheddar</dd>
+            </dl>
+          </div>
+          <div class="alto_belo_4 col-6">
+            <h5 class="">ALTO BELO 4</h5>
+            <dl>
+              <dd> molho, calabresa fatiada, ervilha, ovos e cheddar</dd>
+            </dl>
+          </div>
+          <div class="alto_belo_5 col-6">
+            <h5 class="">ALTO BELO 5</h5>
+            <dl>
+              <dd> molho, mussarela, catupiry, cheddar, provolone e parmesão</dd>
+            </dl>
+          </div>
+          <div class="veneza col-6">
+            <h5 class="">VENEZA</h5>
+            <dl>
+              <dd> molho, frango, palmito e cebola</dd>
+            </dl>
+          </div>
+          <div class="verao col-6">
+            <h5 class="">VERÃO</h5>
+            <dl>
+              <dd> molho, calabresa fatiada, ervilha, ovos e catupiry</dd>
+            </dl>
+          </div>
+          <div class="jardineira col-6">
+            <h5 class="">JARDINEIRA</h5>
+            <dl>
+              <dd> molho, presunto, ervilha, milho e mussarela</dd>
+            </dl>
+          </div>
+          <div class="bacon col-6">
+            <h5 class="">BACON</h5>
+            <dl>
+              <dd> molho, mussarela e bacon</dd>
+            </dl>
+          </div>
+          <div class="toscana col-6">
+            <h5 class="">TOSCANA</h5>
+            <dl>
+              <dd> molho, calabresa, cebola e mussarela</dd>
+            </dl>
+          </div>
+          <div class="florenza col-6">
+            <h5 class="">FLORENZA</h5>
+            <dl>
+              <dd> molho, palmito, ervilha, cebola, ovos e mussarela</dd>
+            </dl>
+          </div>
+          <div class="x_tudo col-6">
+            <h5 class="">X-TUDO</h5>
+            <dl>
+              <dd> molho, lombo, calabresa, frango, presunto, champignon, palmito, ervilha, ovos, mussarela, catupiry e
+                bacon + borda gratis</dd>
+            </dl>
+          </div>
+          <div class="moda_do_forneiro col-6">
+            <h5 class="">MODA DO FORNEIRO</h5>
+            <dl>
+              <dd> molho, mussarela, calabresa moida, frango, milho e bacon</dd>
+            </dl>
+          </div>
+          <div class="di_napoli col-6">
+            <h5 class="">DI NAPOLI</h5>
+            <dl>
+              <dd> molho, frango, palmito, ervilha e mussarela</dd>
+            </dl>
+          </div>
+          <div class="carne_seca col-6">
+            <h5 class="">CARNE SECA</h5>
+            <dl>
+              <dd> molho, carne seca, cebola e mussarela</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="pizzaz_doces m-md-5" id="pizza_doce">
+        <h3 class="text-center">PIZZAS DOCES</h3>
+        <div class="lista row mt-5">
+          <div class="banana col-6">
+            <h5 class="">BANANA</h5>
+            <dl>
+              <dd> banana e chocolate</dd>
+            </dl>
+          </div>
+          <div class="brigadeiro col-6">
+            <h5 class="">BRIGADEIRO</h5>
+            <dl>
+              <dd>chocolate e granulado</dd>
+            </dl>
+          </div>
+          <div class="prestigio col-6">
+            <h5 class="">PRESTIGIO</h5>
+            <dl>
+              <dd> chocolate e coco ralado</dd>
+            </dl>
+          </div>
+          <div class="black_white col-6">
+            <h5 class="">BLACK WHITE</h5>
+            <dl>
+              <dd> chocolate ao leite e chocolate branco</dd>
+            </dl>
+          </div>
+          <div class="mm col-6">
+            <h5 class="">M&M´s</h5>
+            <dl>
+              <dd> chocolate e M&M´s</dd>
+            </dl>
+          </div>
+          <div class="romeu_e_julieta col-6">
+            <h5 class="">ROMEU E JULIETA</h5>
+            <dl>
+              <dd> mussarela e goiabada</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="fogazzas m-md-5" id="fogazza">
+        <h3 class="text-center">FOGAZZAS</h3>
+        <div class="lista row mt-5 ">
+          <div class="f_calabresa col-6">
+            <h5 class="">CALABRESA</h5>
+          </div>
+          <div class="f_queijo col-6">
+            <h5 class="">QUEIJO</h5>
+          </div>
+          <div class="f_calabresa_e_mussarela col-6">
+            <h5 class="">CALABRESA E MUSSARELA</h5>
+          </div>
+          <div class="f_frango col-6">
+            <h5 class="">FRANGO</h5>
+          </div>
+          <div class="f_frango_com_catupiry col-6">
+            <h5 class="">FRANGO COM CATUPIRY</h5>
+          </div>
+          <div class="atum col-6">
+            <h5 class="">ATUM</h5>
+          </div>
+          <div class="f_atum_com_catupiry col-6">
+            <h5 class="">ATUM COM CATUPIRY</h5>
+          </div>
+          <div class="f_lombo col-6">
+            <h5 class="">LOMBO</h5>
+          </div>
+          <div class="f_catupiry col-6">
+            <h5 class="">CATUPIRY</h5>
+          </div>
+        </div>
+        <div class="aviso text-center ">
+          <a>
+            Todos os Beirutes acompanham:<br> presunto, queijo, bacon, ovos, tomate, alface e maionese
+          </a>
+        </div>
+      </div>
+
+      <div class="tortas m-md-5">
+        <h3 class="text-center">TORTAS</h3>
+        <div class="lista row mt-5 ">
+          <div class="t_atum col-6">
+            <h5 class="">ATUM</h5>
+            <dl>
+              <dd> atum, palmito, champignon, catupiry, mussarela, e azeitona fatiada</dd>
+            </dl>
+          </div>
+          <div class="t_presunto col-6">
+            <h5 class="">PRESUNTO</h5>
+            <dl>
+              <dd> presunto, palmito, milho, catupiry, mussarela, e azeitona fatiada</dd>
+            </dl>
+          </div>
+          <div class="t_frango col-6">
+            <h5 class="">FRANGO</h5>
+            <dl>
+              <dd> frango, palmito, milho, catupiry, mussarela, e azeitona fatiada</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="contato position-relative overflow-hidden p-md-5 m-auto" id="contato">
+    <div class="row">
+      <div class="col-12 col-md d-flex align-items-center">
+        <img src="/Pizzaria/assets/logo.png" alt="logo" class="d-block mb-2">
+        <h5 class="display-6 font-weight-normal ml-3">Pizzaria Cristal</h5>
+      </div>
+      <div class="col-6 col-md">
+        <ul class="list-unstyled text-small text-center">
+          <li><a class="link-secondary text-decoration-none text-dark bi-geo-alt-fill" href="#">Rua Amazonas<br>
+              N°344</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark bi-house-door" href="#">Bairro Boa
+              <br>Esperança</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark bi-building" href="#">Curral de Dentro<br>MG
+              39569-000</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark bi-clock" href="#">Quarta - Segunda<br>18:00 -
+              23:30</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark bi-phone" href="#">Tel: (38) 99944-7025</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md text-center">
+        <h5>MAPA DO SITE</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary text-decoration-none text-dark" href="#">Home</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark" href="#">Cardápio</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark" href="#">Pedir Online</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark" href="#">Sobre Nós</a></li>
+          <li><a class="link-secondary text-decoration-none text-dark" href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div id="map"></div>
+      <script src="/Pizzaria/js/index.js"></script>
+    </div>
+    <small class="d-block mb-3 text-body-secondary text-center">&copy; Wagner Santos Duarte </small>
+
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>

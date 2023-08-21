@@ -1,0 +1,81 @@
+#map {
+    height: 250px;
+    width: 35%;
+}
+#home {
+    color: rgb(0, 0, 0);
+    width: 100%; 
+    height: 716px;
+    background-image: url('../assets/image2.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+#promoções{
+    width: 100%; 
+    height: 716px;
+    background-image: url('../assets/image\ 4.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.sobre_nos{
+    width: 100%; 
+    height: 716px;
+    background-image: url('../assets/image\ 4.png'); 
+    background-size: cover; 
+    background-position: center;
+    color: white;
+}
+
+.contato{
+  background-color: #A23A3A;
+}
+
+.image_cardapio{
+    width: 100%; 
+    height: 387px;
+    background-image: url('../assets/image\ 6.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.cardapio{
+    width: 100%; 
+    height: 3,076px;
+    background-image: url('../assets/Menu.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.navbar{
+    background-color: rgb(13, 52, 39);
+    
+}
+
+.text-white {
+    color: white !important;
+}
+
+.listas{
+    
+    color: white;
+}
+
+.btn-outline-custom {
+    color: #FFFFFF; /* Cor do texto no botão */
+    background-color: red; /* Fundo transparente */
+    border-radius:20px;
+}
+
+.border{
+    border-radius:30px;
+    border-color:white ;
+}
+
+.album{
+    color: white;
+}
+
+
+
